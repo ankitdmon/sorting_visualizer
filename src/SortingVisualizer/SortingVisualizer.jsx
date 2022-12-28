@@ -40,6 +40,7 @@ export default class SortingVisualizer extends React.Component {
             }}
           ></div>
         ))}
+            <button onClick={()=>this.resetArray()}>Generate New Array </button>
       </div>
     );
   }
