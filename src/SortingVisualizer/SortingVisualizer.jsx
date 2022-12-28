@@ -14,6 +14,7 @@ export default class SortingVisualizer extends React.Component {
     this.resetArray();
   }
 
+  // For gererating new array again
   componentWillUnmount() {
     this.resetArray();
   }
@@ -45,5 +46,7 @@ export default class SortingVisualizer extends React.Component {
 
 // lol using this link https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range
 function randomIntFromInterval(min, max) {
-    return Math.random() * (max - min) + min;
+   min = Math.ceil(min);
+   max = Math.floor(max);
+   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
