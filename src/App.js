@@ -1,8 +1,10 @@
+import React from "react";
+import SortingVisualizer from "./SortingVisualizer/SortingVisualizer";
 
 function App() {
   return (
     <div className="App">
-      <h1>Testing</h1>
+      <SortingVisualizer />
     </div>
   );
 }
